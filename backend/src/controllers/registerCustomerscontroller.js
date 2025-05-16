@@ -86,7 +86,7 @@ if (verificationCode !== storedCode){
     return res.json ({message: "invalid verfication code"})
 }
 
-const customer = await cutomersModel.findOne({email})
+const customer = await customersModel.findOne({email})
 if (!customer){
 return res.json({message:"Customer not found"})
 }
