@@ -10,7 +10,6 @@ const logincontroller = {};
           
 logincontroller.login = async (req, res) => {
     const {email, password} = req.body; //req.body = lo que le pedimos al frontend
-    console.log({message: "valores"})
 
 try {
 let userFound;
